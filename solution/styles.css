@@ -1,0 +1,156 @@
+/* Main Stylesheet */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 60px;
+}
+
+.h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.border-left {
+  border-left: 1px solid #d0d5d8;
+}
+
+.center-v-h {
+  width: 100%;
+  position: relative;
+  padding: 25px;
+  text-align: center;
+}
+
+.payment-msg {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn-payment {
+  background-color: #00a39e;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 0;
+  text-transform: uppercase;
+  max-width: 100%;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.btn-payment:hover {
+  color: #fff;
+}
+
+/* Background Color */
+.bg-light-blue {
+  background-color: #f4f7fc;
+}
+
+/* No Gutters  */
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.no-gutters > .col, .no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* Form Styles */
+.form-container {
+  max-width: 100%;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form-fields {
+  border: 1px solid #d0d5d8;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  padding: 2px 0 5px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #d0d5d8;
+}
+
+.form-label {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.form-control {
+  width: 95%;
+  height: 30px;
+  border: 0;
+  padding: 0;
+  margin: auto;
+}
+
+.legend  {
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.form-check {
+  margin-bottom: 5px;
+}
+
+.form-check-label {
+  font-size: 14px;
+}
+
+.form-check-inline {
+  margin-left: 10px;
+}
+
+.form-check-input.is-valid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label {
+  color: initial;
+}
+
+form.is-invalid .form-label {
+  color: #ce0c24;
+}
+
+.invalid-feedback {
+  background-color: #fae6e9;
+  font-size: 12px;
+  color: #ce0c24;
+  border-top: 1px solid #d0d5d8;
+  padding-left: 10px;
+  margin-bottom: -5px;
+}
+
+.payment-debit {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .btn-payment {
+    max-width: 205px;
+  }
+
+  .center-v-h {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+  }
+
+  .form-container{
+    max-width: 660px;
+  }
+
+  .form-group:last-child {
+    border-bottom: 0;
+  }
+}

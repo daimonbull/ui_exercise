@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>OneMain Financial</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="h2">One-time Loan Payment</h2>
+      <p>Fill out the form below to complete your payment.</p>
+      <form id="paymentForm" class="form-container" novalidate>
+        <div class="form-fields">
+          <div class="form-group">
+            <label class="form-label" for="loan-acct-number">Loan Account number</label> <input class="form-control" id="loan-acct-number" placeholder="" required="" type="text">
+            <div class="invalid-feedback">
+              Loan account number is required
+            </div>
+          </div>
+          <div class="form-row no-gutters">
+            <div class="col-12 col-md-7">
+              <fieldset class="form-group">
+                <div class="legend">
+                  Type of Account:
+                </div>
+                <div class="form-check form-check-inline">
+                  <input checked class="form-check-input" id="checkng" name="payment-method" type="radio" value="checking"> <label class="form-check-label" for="checkng">Checking</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" id="debit-card" name="payment-method" type="radio" value="debit-card"> <label class="form-check-label" for="debit-card">Debit Card</label>
+                </div>
+              </fieldset>
+              <div class="payment-bank">
+                <div class="form-group">
+                  <label class="form-label" for="routing-number">Routing Number</label> <input class="form-control" id="routing-number" placeholder="" required="" type="text">
+                  <div class="invalid-feedback">
+                    Routing number is required
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="bank-acct-number">Bank Account Number</label> <input class="form-control" id="bank-acct-number" placeholder="" required="" type="text">
+                  <div class="invalid-feedback">
+                    Bank account number is required
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="confrim-bank-acct-number">Confrim Bank Account Number</label> <input class="form-control" id="confrim-bank-acct-number" placeholder="" required="" type="text">
+                  <div class="invalid-feedback">
+                    Name on card is required
+                  </div>
+                </div>
+              </div>
+              <div class="payment-debit">
+                <div class="form-group">
+                  <label class="form-label" for="debit-number">Debit card number</label> <input class="form-control" id="debit-number" placeholder="" required="" type="text">
+                  <div class="invalid-feedback">
+                    Debit card number is required
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="debit-name">Name on card</label> <input class="form-control" id="debit-name" placeholder="" required="" type="text">
+                  <div class="invalid-feedback">
+                    Name on card is required
+                  </div>
+                </div>
+                <div class="form-row no-gutters">
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-label" for="debit-expiration">Expiration Date</label> <input class="form-control" id="debit-expiration" placeholder="" required="" type="text">
+                      <div class="invalid-feedback">
+                        Expiration date required
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col border-left">
+                    <div class="form-group">
+                      <label class="form-label" for="debit-expiration">CVV</label> <input class="form-control" id="debit-cvv" placeholder="" required="" type="text">
+                      <div class="invalid-feedback">
+                        Security code required
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-5 border-left bg-light-blue text-center">
+              <div class="center-v-h payment-bank">
+                <p class="payment-msg">Where can I find the routing and account number?</p>
+                <img alt="check" class="img-fluid" src="checking.png">
+              </div>
+              <div class="center-v-h payment-debit">
+                <p class="payment-msg">Where can I find the CVV number?</p>
+                <img alt="check" class="img-fluid" src="debitcard.png">
+              </div>
+            </div>
+          </div>
+        </div><button id="makePayment" class="btn btn-payment btn-lg " type="submit">Make Payment</button>
+      </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
